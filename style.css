@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2family=Lato");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #22272f;
+    color: #fff;
+}
+
+nav {
+    background-color: #2c2d34;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: all 200ms ease-in-out;
+}
+
+nav a:hover {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+header {
+    background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+header::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    text-align: center;
+    padding: 40px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section p {
+    margin-top: 0;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 810px;
+    margin: 20px auto 0;
+}
+
+.project {
+    max-width: 250px;
+    margin: 10px;
+}
+
+.project p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+.project a,
+#projects a {
+    text-decoration: none;
+    color: white;
+}
+
+.social {
+    background-color: #21262c;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: all 200ms ease-in-out;
+}
+
+.social-links a:hover {
+    font-size: 32px;
+}
+
+@media(max-width: 440px) {
+    section {
+        padding: 20px;
+    }
+}

@@ -5,11 +5,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3ae51e5ee0.js" crossorigin="anonymous"></script>
     <title>Profile Website</title>
 </head>
 
 <body>
-    <h1>Name</h1>
+    <nav id="navbar">
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <header id="welcome-section">
+        <h1>Hi, there! 👋</h1>
+        <p>I'm Roxana - </p>
+        <p>a Front End Developer living in Leeds, United Kingdom and working for Dedalus.</p>
+    </header>
+    <section id="projects">
+        <h2><a href="https://github.com/Roxana-L" target="_blank" id="profile-link">Projects</a></h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1542361040-f6a5ee3e7a2c?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNzQzNjk0MQ&ixlib=rb-1.2.1&q=85"
+                    alt="weather-app-JS">
+                <p class="project-tile"><a href="https://focused-jones-055d88.netlify.app/">Weather App in JS</a></p>
+            </div>
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1565608221829-f95dd349717f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNzQzNjk0MQ&ixlib=rb-1.2.1&q=85"
+                    alt="weather-app-react">
+                <p class="project-tile"><a href="https://jovial-swartz-331dbe.netlify.app/">Weather App in React</a></p>
+            </div>
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1524639064490-254e0a1db723?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNzQzNjk5MA&ixlib=rb-1.2.1&q=85"
+                    alt="dictionary-app">
+                <p class="project-tile"><a href="https://upbeat-golick-a5502f.netlify.app/">Dictionary App in React</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <ul class="social-links">
+
+            <li><a href="https://www.instagram.com/roxana_l03/" target="_blank"><i class="fab fa-instagram"></a></i>
+            </li>
+            <li><a href="https://www.linkedin.com/in/roxanalupei" target="_blank"><i class="fab fa-linkedin"></a></i>
+            </li>
+            <li><a href="https://github.com/Roxana-L" target="_blank"><i class="fab fa-github"></a></i>
+            </li>
+        </ul>
+    </section>
 </body>
 
 </html>
